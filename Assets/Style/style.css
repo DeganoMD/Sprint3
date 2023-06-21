@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: khaki;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+img{
+    height: 25rem;
+    width: 30rem;
+    
+}
+.logomindy{
+    position: sticky;
+   top: 0%;
+   margin-top: 0px;
+    display: flex;
+    justify-content: end; 
+}
+.log{
+    height: 2rem;
+    width: 5rem;
+   
+ 
+}
+
+.father{
+    margin: 100px;
+ 
+}
+
+.son{
+    display: flex;
+    margin: 50px;
+}
+
+p{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+footer{
+    margin-bottom: 0px;
+    position: sticky;
+    bottom: 0%;
+  
+
+}
+
+footer>h1{
+    color: black;
+    font-size: xx-small;
+    font-style: oblique;
+    font-weight: 50;
+    height: 3vh;
+    width: 100vw;
+    background-color: violet;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    
+    
+}
+.menu{
+    text-decoration: none;
+    color: limegreen;
+    font-size: medium;
+
+}
+
+.fatherindex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.sonindex{
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+h2, .subtext, p{
+    color: rgb(101, 121, 196);
+    font-size: larger;
+    font-weight: 100;
+}
+ 
+h3{
+   text-align: center;
+   color: magenta;
+   font-size: xx-large;
+   font-weight: 200;
+   font-weight: bolder;
+}
+
+nav.cont{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.contactto{
+    text-decoration: none;
+    color: limegreen;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+}
+
+h6{
+    text-align: center;
+    font-size: larger;
+    font-weight: 100;
+    color: rgb(101, 121, 196);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table{
+    background-color: rgb(240, 148, 10);
+    color: darkblue; 
+}
+
+.tab{
+    display: flex;
+    justify-content: center;
+}
+
+.bandt{
+    text-align: center;
+}
+
+
+.imginfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listinfo{
+    font-weight: 100;
+    color: rgb(101, 121, 196);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: justify;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+/* <fieldset>
+            <legend>Datos Principales</legend>
+            <label for="primer-nombre">Nombre:</label>
+            <input type="text" id="primer-nombre" name="nombre-usuario" placeholder="ejemplo:Angela">
+            <label for="primer-apellido">Apellido:</label>
+            <input type="text" id="primer-apellido" name="apellido-usuario">
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" name="fecha-nac" id="fecha">
+            <label for="mail-personal">Ingresa tu mail</label>
+            <input type="email" name="email-usuario" id="mail-personal">
+        </fieldset>
+        <fieldset>
+            <legend>Gustos de Pizzas</legend>
+        <label for="pizza-muzza">Pizza de Muzzarella:</label>
+        <input type="checkbox" id="pizza1" name="pizza-muzza" value="pizza-muzza-seleccionada">
+        <label for="pizza-anchoa">Pizza de Anchoas:</label>
+        <input type="checkbox" id="pizza2" name="pizza-ancho" value="pizza-muzza-selecionada">
+    </fieldset>
+    <fieldset>
+        <legend>Ejemplo</legend>
+        <label for="">
+            ejemplo
+        <input type="text">
+    </label>
+        <legend>Elegi tu talle de remera</legend>
+        <label for="t-uno">Talle1</label>
+        <input type="radio" id="t-uno" name="talle" value="talle-uno">
+        <label for="t-dos">Talle2</label>
+        <input type="radio" id="t-dos" name="talle" value="talle-dos">
+        <label for="paleta-color">Elegi el color de la remera</label>
+        <input type="color" name="color-elegido" id="paleta-color">
+    </fieldset>
+    <fieldset>
+        <legend>Color de remra:</legend>
+        <label for="color-remera">elegi el color de la remera</label>
+        <select></select>
+    </fieldset>
+
+        <input type="submit" value="enviar"> */
+
+
+
+
+
+
+
+
+
+
+
+
+
