@@ -3,34 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raffe | Mindy Travel</title>
+    <title>Raffle | Mindy Travel</title>
     <link rel="shortcut icon" href="../Image/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../Style/style.css">
 </head>
 <body>
-    <div class="logomindy"><img class="log" src="../Image/logo.png" alt="Logo"></div>
-    <header>
-        
-        <main> 
-           
-            <h3>RAFFE</h3>
-        <nav>
-            <a href="#" class="menu">Home</a>
-            <a href="../Assets/Page/aboutUs.html" class="menu">About Us</a>
-            <a href="../Assets/Page/contact.html" class="menu">Contact</a>
-            <a href="../Assets/Page/benefitsTips.html" class="menu">Benefits Tips</a>
-            <a href="../Assets/Page/information.html" class="menu">Information</a>
-            <a href="../Assets/Page/raffe.html" class="menu">Raffe</a>
+<header>
+        <nav class="button">
+            <a href="../../index.html" class="menu">Home</a>
+        <a href="./aboutUs.html" class="menu">About Us</a>
+        <a href="./contact.html" class="menu">Contact</a>
+        <a href="./benefitsTips.html" class="menu">Benefits Tips</a>
+        <a href="./information.html" class="menu">Information</a>
+        <a href="#" class="menu">Raffle</a>
         </nav>
-       
-    </header>
+        <img src="../Image/logo.png" alt="logo" class="logomindy">
+</header>
+<main>
+<section>
+    <article class="title">
+        <h1>RAFFLE</h1>
+        <h2>You can collaborate and participate in a raffle for a 1-week trip</h2>
+    </article>
+</section>
+<section class="rafflecomplete">
+    <section class="rafflemap">
+        <p class="textcontact">To participate you must be from Toronto, Canada</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.90977296093!2d-79.54286380725871!3d43.71837095797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses-419!2sar!4v1687509818770!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section>
     <form action="../ShowData/show_data.html" method="get">
-        
-
+        <div class="form">
+        <fieldset class="stepone">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="user-name" placeholder="example:Angela">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="user-last-name" placeholder="example:Smith">
+            <label for="personal-email">E-mail:</label>
+            <input type="email" id="personal-email" name="user-email">
+        </fieldset>
+        <fieldset class="steptwo">
+            <label for="date-travel">Choose Date</label>
+            <input type="date" id="date-travel" name="travel">
+            <label for="choose-country">Choose Country</label>
+               <select id="choose-country" name="select-country">
+                <option value=" ">--choose country--</option>
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="usa">United States</option>
+                <option value="uruguay">Uruguay</option>
+            </select>
+        </fieldset>
+        <fieldset class="stepthree">
+            <legend>Payment options</legend>
+            <label for="money">Cash</label>
+            <input type="radio" id="money" name="cash" value="money">
+            <label for="credit">Credit Card</label>
+            <input type="radio" id="credit" name="card" value="credit-card">
+            <label for="debit">Debit Card</label>
+            <input type="radio" id="debit" name="card" value="debit-card">
+        </fieldset>
+        <fieldset class="stepfour">
+            <label for="message">Message (optional)</label>
+            <textarea id="message"  name="obsevation" cols="30" rows="10"></textarea>
+            <label for="legal">I accept terms and conditions...</label>
+            <input type="checkbox" id="legal" name="accept" value="check-the-box">
+            <input type="submit" value="Send">
+        </fieldset>
+    </div>
     </form>
-    <footer>
-        <h1>Created by: Daniela  Degano</h1>
-    </footer>
+    </section>
+</section>
 </main>
+<footer>
+    <h6>Created by: Daniela Degano</h6>
+</footer>
 </body>
 </html>
+

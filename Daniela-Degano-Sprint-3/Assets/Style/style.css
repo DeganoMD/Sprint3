@@ -1,222 +1,446 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: khaki;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+:root{
+    --pink: #f1968b;
+    --yellow: #e2fd66;
+    --beige: #f6fce5;
+    --sky: #3ac3e5;
+    --blue: #126599;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#3ac3e5;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    min-height: 92vh;
+}
+
+header{
+    background-color:#126599;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 4vh;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+ header a:hover{
+    background-color:#f1968b;
+    padding: .5rem;
+    border-radius: 2rem;
+ }
+ 
+.menu{
+    background-color:#126599;
+    color:#e2fd66;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-size: smaller;
+    text-decoration: none;
+    border-radius: 3rem;
+}
+
+.button{  
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 img{
     height: 25rem;
     width: 30rem;
-    
 }
+
 .logomindy{
-    position: sticky;
-   top: 0%;
-   margin-top: 0px;
-    display: flex;
-    justify-content: end; 
-}
-.log{
     height: 2rem;
     width: 5rem;
-   
- 
-}
-
-.father{
-    margin: 100px;
- 
-}
-
-.son{
+    position: sticky;
+    top: 0%;
+    margin-top: 0px;
     display: flex;
-    margin: 50px;
+    justify-content: end; 
+    background-color: #f6fce5;
 }
 
-p{
-    margin-left: 30px;
-    margin-top: 10px;
-    font-size: larger;
+.title{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h1, h2{
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    color:#126599;
+    text-decoration: underline;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+}
+
+.airporthome{
+    width: 50rem;
+    height: 35rem;
+    padding-bottom: 2rem;
+    
+}
+
+.windowhome{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.texthome{
+    border: 3px outset #f6fce5;
+    background-color: #126599 ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 13rem;
+    width: 32rem;
+    color: #f6fce5;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.imagehome{
+    height: 40rem;
+    width: 30rem;
+    padding-bottom: 2rem;
 }
 
 footer{
     margin-bottom: 0px;
     position: sticky;
-    bottom: 0%;
-  
-
+    bottom: 0%; 
 }
 
-footer>h1{
-    color: black;
+footer>h6{
+    color:  #f1968b;
     font-size: xx-small;
     font-style: oblique;
     font-weight: 50;
-    height: 3vh;
-    width: 100vw;
-    background-color: violet;
+    height: 4vh;
+    background-color:#126599;
     text-align: center;
 }
 
-nav{
-    text-align: center;
-    
-    
-}
-.menu{
-    text-decoration: none;
-    color: limegreen;
-    font-size: medium;
-
-}
-
-.fatherindex{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-.sonindex{
-    display: flex;
-    flex-direction: row; 
-    
-}
-
-.image{
-    display: flex;
-    justify-content: center;
-}
-
-h2, .subtext, p{
-    color: rgb(101, 121, 196);
-    font-size: larger;
-    font-weight: 100;
-}
- 
-h3{
-   text-align: center;
-   color: magenta;
-   font-size: xx-large;
-   font-weight: 200;
-   font-weight: bolder;
-}
-
-nav.cont{
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-}
-
-.contactto{
-    text-decoration: none;
-    color: limegreen;
-}
-
-.answer{
-    display: flex;
-    justify-content: center;
-}
-
-h6{
-    text-align: center;
-    font-size: larger;
-    font-weight: 100;
-    color: rgb(101, 121, 196);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-table{
-    background-color: rgb(240, 148, 10);
-    color: darkblue; 
-}
-
-.tab{
-    display: flex;
-    justify-content: center;
-}
-
-.bandt{
-    text-align: center;
-}
-
-
-.imginfo{
+.fatherbox{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.listinfo{
-    font-weight: 100;
-    color: rgb(101, 121, 196);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    text-align: justify;
+
+.firstbox{
+     display: flex;
+     flex-direction: row;
+     justify-content:space-evenly;
+     align-items: center;
+     padding-bottom: 2rem;
 }
 
-.info{
+.secondbox{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.thirdbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.firsttext{
+    border: 3px outset #f6fce5;
+    background-color: #126599 ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 8rem;
+    width: 32rem;
+    color: #f6fce5;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.secondtext{
+    border: 3px outset #f6fce5;
+    background-color: #126599 ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 8rem;
+    width: 32rem;
+    color: #f6fce5;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.thirdtext{
+    border: 3px outset #f6fce5;
+    background-color: #126599 ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 12rem;
+    width: 32rem;
+    color: #f6fce5;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.sectioncontact{
+    display: flex;
+    justify-content: center;
+}
+
+.imgcontact{
+    height: 35rem;
+    width: 50rem;
+}
+
+.textcontact{
+    text-align: center;
+    color: #f6fce5;
+    font-weight: bold;
+}
+ .mail{
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color:#126599;
+    color:#e2fd66;
+    padding: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ }
+ main a:hover{
+    background-color:#f1968b;
+    border-radius: 2rem;
+    padding: .5rem;
+ }
+
+ .infocontact{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ ol{
+    margin-left: 2rem;
+    list-style-type: decimal;
+}
+ ul{
+    margin-left: 2rem;
+    list-style-type: circle;
+}
+ .list{
+    border: 3px outset #f6fce5;
+    background-color:#126599;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 10rem;
+    width: 35rem;
+    color: #f6fce5;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.5rem;
+ }
+
+ .tipsimage{
+    padding-bottom: 2rem;
+ }
+
+ .tips{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+
+ .benefits{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+ }
+
+ .tableinfo{
+    border: 4px double var(--yellow);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    height: 300px;
+    width: 40%;
+    font-size: larger;
+    font-weight: bold;
+    color: #f1968b;
+    text-align: center;
+}
+
+table>tr, td, th{
+    background-color:#126599 ;
+}
+
+.colortable{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    width: 17rem;
+    color:#f6fce5;
+    font-weight:normal;
+    border: 2px double  #126599;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.stepone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #126599;
+}
+
+.steptwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stepthree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stepfour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rafflemap{
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-content:center;
+    padding-bottom: 5rem;
 }
 
 
+.rafflecomplete{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
 
+@media only screen and (max-width: 767px) {
+    main{
+        min-height: 130vh;
+    }
+    header{
+        background-color:#126599;
+        display: flex;
+        min-height: 4vh;
+        justify-content: center;
+        flex-direction:column-reverse;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .airport{
+        width: 7rem;
+        height: 3rem;
+        align-items: center;
+    }
+    .windowhome{
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: center;
+     align-items: center;
+    }
+    .texthome{
+        font-weight: 8;
+        height: 10rem;
+        width: 25rem;
+        flex-wrap:wrap ;
+    }
+    .imagehome{
+        height: 17rem;
+        width: 12rem;
+    }
+    .fatherbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 9rem;
+        width: 12rem;
+    }
+    .firsttext{
+height: 10rem;
+width: 20rem;
+font-size: small;
+    }
+    .secondtext{
+        height: 10rem;
+        width: 20rem;
+        font-size: small; 
+    }
+    .thirdtext{
+        height: 10rem;
+        width: 20rem;
+        font-size: small; 
+    }
+   .usimage{
+    height: 7rem;
+    width: 9rem;
+   }
 
-/* <fieldset>
-            <legend>Datos Principales</legend>
-            <label for="primer-nombre">Nombre:</label>
-            <input type="text" id="primer-nombre" name="nombre-usuario" placeholder="ejemplo:Angela">
-            <label for="primer-apellido">Apellido:</label>
-            <input type="text" id="primer-apellido" name="apellido-usuario">
-            <label for="fecha">Fecha de Nacimiento</label>
-            <input type="date" name="fecha-nac" id="fecha">
-            <label for="mail-personal">Ingresa tu mail</label>
-            <input type="email" name="email-usuario" id="mail-personal">
-        </fieldset>
-        <fieldset>
-            <legend>Gustos de Pizzas</legend>
-        <label for="pizza-muzza">Pizza de Muzzarella:</label>
-        <input type="checkbox" id="pizza1" name="pizza-muzza" value="pizza-muzza-seleccionada">
-        <label for="pizza-anchoa">Pizza de Anchoas:</label>
-        <input type="checkbox" id="pizza2" name="pizza-ancho" value="pizza-muzza-selecionada">
-    </fieldset>
-    <fieldset>
-        <legend>Ejemplo</legend>
-        <label for="">
-            ejemplo
-        <input type="text">
-    </label>
-        <legend>Elegi tu talle de remera</legend>
-        <label for="t-uno">Talle1</label>
-        <input type="radio" id="t-uno" name="talle" value="talle-uno">
-        <label for="t-dos">Talle2</label>
-        <input type="radio" id="t-dos" name="talle" value="talle-dos">
-        <label for="paleta-color">Elegi el color de la remera</label>
-        <input type="color" name="color-elegido" id="paleta-color">
-    </fieldset>
-    <fieldset>
-        <legend>Color de remra:</legend>
-        <label for="color-remera">elegi el color de la remera</label>
-        <select></select>
-    </fieldset>
+   .firstbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .secondbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .thirdbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .rafflecomplete{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content:center;
+    align-items: center;
+}
+.infocontact{
+    padding-top: 5rem;
+}
 
-        <input type="submit" value="enviar"> */
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer>h6{
+    color:  #f1968b;
+    font-size: xx-small;
+    font-style: oblique;
+    font-weight: 50;
+    height: 4vh;
+    background-color:#126599;
+    text-align: center;
+}
+    }
